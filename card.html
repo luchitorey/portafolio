@@ -26,8 +26,19 @@
         }
         
         .fila {
+            padding: 0 15px 0 15px;
+            /*  */
+            padding-left: 15px;
+            padding-right: 15px;
+            /*  */
+            padding: 0 15px;
+            /*  */
             display: flex;
             flex-direction: row;
+            /* mainAxisAligment: */
+            justify-content: space-between;
+            /* crossAxisAligment: */
+            align-items: center;
             width: 90%;
             height: 100px;
             background: #e8ecff;
@@ -70,6 +81,31 @@
             font-size: 18px;
             border-radius: 12px;
             margin-bottom: 20px;
+            box-shadow: 4px 8px 20px #382ae1aa;
+        }
+        
+        .cancel {
+            color: #828499
+        }
+        
+        .plan {
+            /* line-height: 4px; */
+            margin: 0;
+        }
+        
+        .plan-name {
+            font-weight: 900;
+            color: #242B3E
+        }
+        
+        .plan-price {
+            font-weight: 400;
+            color: #7A7E97;
+        }
+        
+        .change {
+            color: #3328A0;
+            text-decoration: underline;
         }
     </style>
     <div class="columna">
@@ -82,11 +118,28 @@
 
             <p class="p">you can now listen to millions of songs, <br>audiobooks, and podcasts on any devices <br>anywhere you like
 
-                <div class="fila"></div>
+                <div class="fila">
+
+                    <!-- Contenedor de la imagen -->
+                    <div>
+                        <img src="/card/images/icon-music.svg" alt="">
+                    </div>
+
+                    <!-- Contenedor de la columna para el nombre del plan y el precio -->
+                    <div class="column">
+
+                        <h4 class="plan plan-name">Anual Plan</h4>
+                        <h4 class="plan plan-price">$59.99/year</h4>
+                    </div>
+
+
+                    <!-- Contenedor del texto "change" -->
+                    <div class="change">change</div>
+
+                </div>
 
                 <button class="button">proceed to pay</button>
-
-
+                <h3 class="cancel">cancel order</h3>
         </div>
 
 
